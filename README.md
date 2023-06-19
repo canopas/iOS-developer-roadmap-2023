@@ -96,6 +96,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * On Preview Screen show the image in fullscreen.
   - Use Kingfisher for image preview.
   - Add a button to go back to the camera screen.
+  - Open this screen by setting up the segue with the parent controller.
 * The camera resources should be released when the controller is no longer alive.
 
 ### Practical 6
@@ -133,6 +134,8 @@ If you already have knowledge and experience in iOS development, you may not nee
     - Portrait:  phone - 3, iPad - 5
     - Landscape: phone - 4, iPad - 6
   - Tapping a recipe should open the Detail screen.
+  - It should allow drag and drop of the cells.
+  - should have an edit button on the tool bar to delete items.
 * On the Detail screen show full recipe detail with recipe image and description.
   - Add a back button to navigate back to the list of recipes.
 * Use dummy data for recipes.
@@ -155,3 +158,205 @@ If you already have knowledge and experience in iOS development, you may not nee
   - Add a text field to input the receiver's email address and email content.
   - Add a button to send an email.
     - On click of it, the app should ask for the app to choose to send mail on.
+
+### Practical 11
+#### Develop the TalkEasy application
+* The app will send and receive messages between two screens.
+* The app will use two controllers - Sender & Receiver.
+* The Sender controller should have an edit text and a send button
+  - When the user enters a message and clicks on the send button, open the Receiver screen and show the message received from the Sender screen.
+* The Receiver activity should have an edit text and a reply button
+  - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender screen and displayed in a text view. 
+
+### Practical 12
+#### Create Deep Links to App Content
+* Implement an app that handles incoming links.
+* The app will use one screen - HomeViewController
+* On Click of this link [https://open.my.app?message={anymessage}](https://open.my.app/?message={anymessage}) from anywhere, the system should open HomeViewController and show the message from a link.
+* Use the URL schema in the App Delegate to handle deep links.
+
+# SwiftUI
+
+### Practical 13
+#### Implement user profile UI
+* The app will use a single screen.
+* Display a user's profile picture, name, and bio. 
+* Use a placeholder for the image and profile data.
+* Add light/dark theme support.
+* Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
+
+### Practical 14
+#### Develop an interactive UI for the Fitness application
+* App will provide a guided introduction to the app's features and functionality.
+* The onboard view should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
+  - The onboard screen should have interactive elements such as buttons or sliders that allow the user to interact with the onboard screen.
+    - There should be next & previous buttons to go through features.
+    - Add an indicator to show pages.
+    - Add an option to skip the onboarding process.
+* After onboard flow completion navigate the user to the Home screen.
+  - The home screen should show basic tips & tricks related to fitness
+  - Add option to log out, on logout show onboard view.
+* Here's [UI for reference](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
+
+### Practical 15
+#### Develop MathQuest quiz application
+* The home screen should be an entry point of the app.
+  - This should provide an introduction to the quiz and a button to start the quiz. 
+* The quiz should ask 10 questions, one at a time, and provide four answer options for each question. 
+  - On click of the next button highlight the correct/wrong answer and show the next question.
+  - Show progress as the user answers the questions.
+* After the user answers all questions, the app should display a result view.
+  - Which shows the number of correct answers and the total number of questions. 
+  - Show the excellence level based on the score such as poor, good, and very good. 
+  - Add a button to restart the quiz so that the user can play again.
+* Implement a day/night theme in the Quiz app.
+* You can use images and placeholders to build eye-catchy UI
+* Here's [UI for reference](https://cdn.dribbble.com/users/2469034/screenshots/8210470/media/f02da6249ee8c25f187432c73d4eec27.png)
+
+# Networking
+
+### Practical 16
+#### Develop ImageSaver application
+* Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage.
+* Screen will have one Text field to enter the URL.
+* Buttons to download images and cancel downloads.
+* Show download progress in the progress bar and in the notification.
+* Show the downloaded image on full screen, once the download succeeds.
+* Add a button to save downloaded images in Gallery.
+* Use Alamofire for networking.
+
+### Practical 17
+#### Implement OnlineUserDirectory
+* The app will use one navigation view.
+  - The main screen should show a list of users, retrieved from API.
+  - Use Lazy Stack to show users.
+  - Show summary of user in the list including name, image, and email
+  - GET Api Url: http://jsonplaceholder.typicode.com/users
+* On the user-item click, display all albums of the user on the next screen. 
+  - Use GridView to show albums
+  - Show placeholder image for an album to make UI eye-catchy
+  - GET Api Url: https://jsonplaceholder.typicode.com/albums?userId=1
+* On the Album item click, show all photos of the album on the next screen.
+  - Use GridView to show photos.
+  - Show thumb image in Grid.
+  - Use Kingfisher to show the image.
+  - On click of items show the image in full screen.
+  - GET Api Url: http://jsonplaceholder.typicode.com/photos?albumId=2
+* Use Alamofire for networking
+
+# App Architecture 
+
+### Practical 18
+#### Create My Journal application
+* Enable users to Add their daily thoughts, feelings, experiences, and ideas. 
+* The app will have a one-navigation view.
+  - Show the user's thoughts in Grid.
+  - Add TextField to take user input.
+  - Add a button to save the user's thoughts.
+  - Store inputs in ViewModel as a state.
+* User should be able to add multiple thoughts.
+* The application should be able to persist data even when there is a configuration change, such as screen rotation.
+* Use MVVM app architecture
+
+### Practical 19
+#### Implement Drink Explorer
+* Allow users to search for their favorite mocktail detail.
+* The app will have single navigation.
+  - Add a search bar that allows users to search for mocktails by name.
+  - GET Api Url: https://www.thecocktaildb.com/api/json/v1/1/search.php?i={mocktail}
+  - Default search text should be `mocktail`. That means initially showing `Mocktail` in the search bar and fetching `mocktail` using API
+* When the user taps on a mocktail, the application should display the ingredients and detail of the mocktail. 
+  - Use placeholder and dummy data if required.
+* Use MVVM app architecture
+
+# DataStore
+
+### Practical 20
+#### Develop Authentify
+* An application that takes user credentials and basic information of a user and navigates to the home screen after a successful login.
+* The app will have a single navigation view.
+  - First, the app will show the register form
+    - Take the user's name, email, and password for login
+    - Other basic information such as an address, DOB, blood group and gender, etc.
+    - Add validation for email and password
+    - Save user detail in UserDeafult.
+  - After registering, show a login form
+    - Take email and password
+    - Check whether the user is available or not. If the user does not exist, notify the user to do registration
+    - Add validation for email
+* Once the user logs in, the app should always show the home screen
+  - It will show user details
+  - Add logout & delete user option in the toolbar
+  - Clear user session on logout
+  - Until the user logs out app should show the home screen.
+  - When the user clicks the logout/delete user button, the app should clear/delete the user session and navigate back to the login screen.
+
+# Local Storage
+
+### Practical 21
+#### Develop EmployeeHub application
+* The application should display a list of employees on the home screen.
+  - Show basic details including their name and job title. 
+* When a user clicks on an employee from the list, the application should display their full details.
+  - including their contact information, job title, and other important information. 
+* The user should be able to add new employees to the directory by entering their basic information and saving it locally. 
+  - Save employee name, email, contact info, job title, address, DOB and blood group, etc.
+* Additionally, the user should be able to update an employee's information by selecting them from the employee list and editing their details.
+* Finally, an employee should be deleted by swiping to delete from the home screen.
+* Use SQLite to store data locally.
+* Use MVVM app architecture
+
+### Practical 22
+#### Implement MinionSpeak application
+* Allow users to translate English text to the language of the minions and display the translated text on the screen.
+* On the Home screen
+  - Add a text field to enter the English text.
+  - Add a button to translate. With the click of a button make an API call.
+  - Once the translation is complete, the translated text should be displayed on the screen in the language of the minions.
+  - GET Request API with query parameter- “text” https://api.funtranslations.com/translate/minion.json?text=”banana”
+* Additionally, the application should store the translation history locally so that users can access their previous translations.
+* Add fab button to check history on the home screen
+* Add an option to delete the history.
+* Use Core Data database.
+
+# Dependency Injection
+
+### Practical 23
+#### Implement University directory application
+* Allow users to browse and search universities from all around the world.
+* On the Home screen
+  - Add a dropdown to select the country
+  - When a country is selected, display a list of universities located in that country from API.
+* Use Swinject for dependency injection.
+* GET Request API: http://universities.hipolabs.com/search?country={country name}
+* Write a Unit test for ViewModel.
+
+### Practical 24
+#### Implement offline-first StoreMate product application
+* GET API: https://fakestoreapi.com/products
+* On Home screen
+  - Retrieve the list of products from an API and displays it to the user using LazyGrid. 
+  - Show product name, image and button to favourite/unfavourite product
+* Allow the user to view the product by clicking on it. 
+  - Show all detail of the product
+  - Add option to favourite/unfavourite the product
+* Add an option on the home screen to view favourite products
+  - Show all favourite products
+  - Add option to remove from favourite
+  - Add option to remove all favourite item
+  - Use can select multiple items with a long click and can remove all selected products from their favourite.
+* The application should have offline functionality, allowing the user to continue browsing products even when they do not have an internet connection.
+* The product data should be first fetched from the local database and then sync with remote API data.
+* Add swipe-to-delete functionality to remove products from local storage
+* Add swipe-to-refresh functionality to refresh the local database with remote data
+* Write a Unit test for viewModel
+
+
+
+
+
+
+
+
+
+
