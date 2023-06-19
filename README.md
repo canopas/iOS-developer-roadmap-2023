@@ -334,29 +334,95 @@ If you already have knowledge and experience in iOS development, you may not nee
 ### Practical 24
 #### Implement offline-first StoreMate product application
 * GET API: https://fakestoreapi.com/products
-* On Home screen
-  - Retrieve the list of products from an API and displays it to the user using LazyGrid. 
-  - Show product name, image and button to favourite/unfavourite product
+* On the Home screen
+  - Retrieve the list of products from an API and displays it to the user.
+  - Make UI like a collection view using SwiftUI
+  - Show product name, image and button to favourite/unfavourite product.
 * Allow the user to view the product by clicking on it. 
   - Show all detail of the product
-  - Add option to favourite/unfavourite the product
-* Add an option on the home screen to view favourite products
+  - Add an option to favourite/unfavourite the product
+* Add an option on the home screen to view favourite products.
   - Show all favourite products
   - Add option to remove from favourite
   - Add option to remove all favourite item
-  - Use can select multiple items with a long click and can remove all selected products from their favourite.
+  - Users can select multiple items with a long click and can remove all selected products from their favourites.
 * The application should have offline functionality, allowing the user to continue browsing products even when they do not have an internet connection.
 * The product data should be first fetched from the local database and then sync with remote API data.
-* Add swipe-to-delete functionality to remove products from local storage
-* Add swipe-to-refresh functionality to refresh the local database with remote data
-* Write a Unit test for viewModel
+* Add swipe-to-delete functionality to remove products from local storage.
+* Add swipe-to-refresh functionality to refresh the local database with remote data.
+* Write a Unit test for ViewModel.
 
+# Combine
 
+### Practical 25
+#### Implement count-down timer application using Combine. 
+* On the Home screen
+  - Add text fields to take user input for hours, minutes and second
+  - Button to start/stop the timer
+  - Show remaining & elapsed time 
+* The user should be able to set the duration of the timer and start it. 
+* When the timer ends, the app should display a notification to indicate that the time is up.
+* Also play sound and vibrate the device on the timer completes.
+* Write a Unit test for ViewModel.
 
+### Practical 26
+#### Implement a VocabVault app
+* Allow users to search for the definition of any word in the English language.
+* On the Home screen
+  - Users should be able to search for a word by typing it into a search bar
+  - App should display as user type in the search view
+  - The app should display the word's definition along with pronunciations, parts of speech, examples, and synonyms.
+  - Add option to play pronunciations of the word
+* Make sure the app will not make unnecessary API calls while typing in search view
+  - Use debounce using Kotlin coroutine to avoid extra API calls
+* Use Kotlin coroutine
+* API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+* Write Unit test for viewModel
 
+### Practical 27
+#### Create a Contact Keeper application.
+* Build an app using one activity
+* On the Home screen
+  - Show all Contacts on the home screen
+    - Show name, phone number and profile
+    - On click of contact show the contact profile
+  - Add option to update contact detail
+  - Add an option to delete a user by swiping to delete
+  - Add option to add contact with person name, multiple phone numbers, profile image, blood group and address
+* Add screen to edit/show contact detail
+  - Add option to delete contact
+* The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
+* Use Firestore to store contact details.
+* Use Kotlin  flow to get a real-time update
+* Write Unit test for viewmodel
 
+# Broadcast receiver & task scheduling
 
+### Practical 28
+#### Create Stand Up! application 
+* Remind users to stand up and walk around every fifteen minutes.
+* Build an app using one activity
+* On the Home screen
+  - Add a Toggle button to turn alarm on and off
+  - Add option to set reminder start time 
+    - Open Timepicker to select reminder start time
+* The application should display a notification when fifteen minutes have passed since the last reminder.
+* Use the Android AlarmManager to schedule reminder notifications.
 
+# Android Service
 
-
-
+### Practical 29
+#### Create a Music player application
+*  Allow users to play multiple songs. 
+* Build an app using one activity
+* On the Home screen
+  - Show a list of songs from the device
+  - On click of the song  open player from the bottom
+  - Show play indicator for current playing song
+* On the Player screen
+  - Show song thumb image if available or use placeholder
+  - show song name
+  - Add option to play/pause the song
+  - Add options to play the next/previous song
+  - Add options to forward/backwards song by 10 sec
+* Use an Android Service to play music in the background and show a notification of the current music being played.
