@@ -26,7 +26,7 @@ The iOS Developer Roadmap 2023 includes **29 practical exercises** that cover al
 * [Database]()
 * [Dependency Injection]()
 * [Combine]()
-* [Broadcast receiver]()
+* [Local Notification]()
 * [iOS Service APIs]()
 
 ## Useful references
@@ -178,10 +178,11 @@ If you already have knowledge and experience in iOS development, you may not nee
 #### TalkEasy Application
 * The app will send and receive messages between two screens.
 * The app will use two controllers - Sender & Receiver.
-* The Sender controller should have an edit text and a send button
+* The Sender controller should have an edit text and a send button.
   - When the user enters a message and clicks on the send button, open the Receiver screen and show the message received from the Sender screen.
-* The Receiver activity should have an edit text and a reply button
-  - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender screen and displayed in a text view. 
+* The Receiver controller should have an edit text and a reply button.
+  - When the user enters a reply message and clicks on the reply button, the replied message should be sent back to the Sender screen and displayed in a text view.
+* To share the messages between 2 screens, you can use the delegate concept.
 
 ### Practical 12
 #### Create Deep Links to App Content
@@ -409,7 +410,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Use Combine with SwiftUI.
 * Write a Unit test for ViewModel. (If possible use Cuckoo)
 
-# Broadcast receiver & Task scheduling
+# Broadcast receiver(Local Notification)
 
 ### Practical 28
 #### Stand Up! Application 
