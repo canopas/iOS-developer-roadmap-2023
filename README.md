@@ -372,57 +372,53 @@ If you already have knowledge and experience in iOS development, you may not nee
   - Users should be able to search for a word by typing it into a search bar
   - App should display as user type in the search view
   - The app should display the word's definition along with pronunciations, parts of speech, examples, and synonyms.
-  - Add option to play pronunciations of the word
-* Make sure the app will not make unnecessary API calls while typing in search view
-  - Use debounce using Kotlin coroutine to avoid extra API calls
-* Use Kotlin coroutine
-* API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>
-* Write Unit test for viewModel
+  - Add an option to play pronunciations of the word
+* Make sure the app will not make unnecessary API calls while typing in the search view.
+  - Use debounce using combine to avoid extra API calls
+* API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>.
+* Write a Unit test for ViewModel.
 
 ### Practical 27
 #### Create a Contact Keeper application.
-* Build an app using one activity
 * On the Home screen
   - Show all Contacts on the home screen
-    - Show name, phone number and profile
+    - Show name, phone number, and profile
     - On click of contact show the contact profile
   - Add option to update contact detail
   - Add an option to delete a user by swiping to delete
-  - Add option to add contact with person name, multiple phone numbers, profile image, blood group and address
+  - Add option to add contact with person name, multiple phone numbers, profile image, birth date, and address
 * Add screen to edit/show contact detail
   - Add option to delete contact
 * The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
 * Use Firestore to store contact details.
-* Use Kotlin  flow to get a real-time update
-* Write Unit test for viewmodel
+* Use Combine with SwiftUI.
+* Write a Unit test for ViewModel.
 
-# Broadcast receiver & task scheduling
+# Broadcast receiver & Task scheduling
 
 ### Practical 28
 #### Create Stand Up! application 
 * Remind users to stand up and walk around every fifteen minutes.
-* Build an app using one activity
 * On the Home screen
-  - Add a Toggle button to turn alarm on and off
+  - Add a Toggle button to turn the alarm on and off
   - Add option to set reminder start time 
-    - Open Timepicker to select reminder start time
+    - Open Timepicker to select a reminder to start the time
 * The application should display a notification when fifteen minutes have passed since the last reminder.
-* Use the Android AlarmManager to schedule reminder notifications.
+* Use UNUserNotificationCenter Swift API to schedule reminder notifications.
 
-# Android Service
+# iOS Service APIs
 
 ### Practical 29
 #### Create a Music player application
-*  Allow users to play multiple songs. 
-* Build an app using one activity
+* Allow users to play multiple songs. 
 * On the Home screen
   - Show a list of songs from the device
-  - On click of the song  open player from the bottom
+  - On click of the song  open the player from the bottom
   - Show play indicator for current playing song
 * On the Player screen
   - Show song thumb image if available or use placeholder
   - show song name
-  - Add option to play/pause the song
-  - Add options to play the next/previous song
-  - Add options to forward/backwards song by 10 sec
-* Use an Android Service to play music in the background and show a notification of the current music being played.
+  - Add an option to play/pause the song
+  - Add an option to play the next/previous song
+  - Add an option to forward/backward the song by 10 sec
+* Use an AVFoundation to play music in the background and show a notification of the current music being played.
