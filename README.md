@@ -20,13 +20,13 @@ The iOS Developer Roadmap 2023 includes **29 practical exercises** that cover al
 * [iOS Storyboard / XIB]()
 * [ViewController]()
 * [SwiftUI]()
-* [Combine]()
-* [App Architecture]()
 * [Networking]()
+* [App Architecture]()
 * [DataStore]()
-* [Local Storage]()
+* [Database]()
 * [Dependency Injection]()
-* [Broadcast receiver & Task scheduling]()
+* [Combine]()
+* [Broadcast receiver]()
 * [iOS Service APIs]()
 
 ## Useful references
