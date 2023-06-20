@@ -46,7 +46,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # iOS Storyboard / XIB
 ### Practical 1
 
-#### Develop UI for a Messaging application
+#### Messaging Application
 * Implement an app using 3 view controllers - Onboard, sign-in, and Home.
 * On the onboard screen, show a brief introduction to the app's features, such as messaging, voice and video calls, and file sharing.
   - Show images, titles, and subtitles to introduce app functionality.
@@ -65,8 +65,9 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Here's [UI for reference](https://cdn.dribbble.com/userupload/3719280/file/original-5d6d206acf8adf5458091206369445f1.png?compress=1&resize=752x)
 
 ### Practical 2
-#### Develop collapsing toolbar for the News application
-* Home screen should show a toolbar and news content
+#### News Application
+* Develop collapsing toolbar for the News application.
+* Home screen should show a toolbar and news content.
 * The toolbar on the screen should initially display the app's logo and title.
 * As the user scrolls down to read the news, the toolbar should collapse to provide more space for the content.
   - You can use any dummy text/images as article content.
@@ -75,7 +76,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Here's [UI for reference](https://cdn.dribbble.com/users/663782/screenshots/3742414/media/67464fde751beb373b4c6fa962edf718.gif)
 
 ### Practical 3
-#### Implement Survey application
+#### Survey Application
 * App will have one screen.
 * On the Home screen display a survey form.
   - Survey form should show questions, 4 options, and a button for the next question.
@@ -88,10 +89,10 @@ If you already have knowledge and experience in iOS development, you may not nee
 * You can use any images or placeholder to make UI eye-catchy.
 * Here's [UI for reference](https://cubicleninjas.com/wp-content/uploads/2021/01/NA-2021-Web-Questionnaire-3.jpg)
 
-# iOS ViewController
+# ViewController
 
 ### Practical 4
-#### Implement Video player 
+#### Video Player 
 * This will be a single-screen app.
   - The app should have a view to show video.
   - One button to play and pause the video.
@@ -101,7 +102,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Use Swift's AVPlayer to play media.
 
 ### Practical 5
-#### Implement SnapCam
+#### SnapCam
 * This will be Two screen app.
 * Home screen should have PreviewView to show a camera
   - It should have a button to capture an image.
@@ -114,7 +115,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * The camera resources should be released when the controller is no longer alive.
 
 ### Practical 6
-#### Implement Note-taking application
+#### Note-taking Application
 * Single-screen app
   - Which allows the user to enter a note.
   - Use the text field to take input from the user.
@@ -123,7 +124,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * This means that when the user rotates the device, the text field should retain its previous contents, and the user should be able to continue editing the note without losing any data.
 
 ### Practical 7
-#### Develop a Travel application
+#### Travel Application
 * Home screen should have a bottom bar with 3 tabs: Destinations, Search, and Settings. 
 * The Destinations tab should display a list of popular travel destinations with images and descriptions.
   - Use a table view to show a list of destinations.
@@ -139,7 +140,7 @@ If you already have knowledge and experience in iOS development, you may not nee
   - If the user changed the setting's toggle, it should stay as it is when the user navigates between the tabs
 
 ### Practical 8
-#### Develop Recipe Lister application
+#### Recipe Lister Application
 * Single navigation app with two controllers - Home & Detail screen
 * On the Home screen add a collection view to display the list of recipes.
   - Each list item should show the recipe name and image.
@@ -149,13 +150,13 @@ If you already have knowledge and experience in iOS development, you may not nee
     - Landscape: phone - 4, iPad - 6
   - Tapping a recipe should open the Detail screen.
   - It should allow drag and drop of the cells.
-  - should have an edit button on the tool bar to delete items.
+  - should have an edit button on the toolbar to delete items.
 * On the Detail screen show full recipe detail with recipe image and description.
   - Add a back button to navigate back to the list of recipes.
 * Use dummy data for recipes.
 
 ### Practical 9
-#### Implement App Browser
+#### App Browser
 * On the Home screen add an input field where the user can enter a URL and a button to open the URL inside the app.
 * Once the user enters a valid URL and clicks the button, show a web view that slides up from the bottom of the screen.
   - This screen will show the content of the URL within a web view. 
@@ -166,7 +167,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * The state of the controller should be preserved on configuration changes such as screen rotation.
 
 ### Practical 10
-#### Develop QuickSend application
+#### QuickSend Application
 * This will be single screen app - QuickSendViewController
 * QuickSendViewController allows users to send emails
   - Add a text field to input the receiver's email address and email content.
@@ -174,7 +175,7 @@ If you already have knowledge and experience in iOS development, you may not nee
     - On click of it, the app should ask for the app to choose to send mail on.
 
 ### Practical 11
-#### Develop the TalkEasy application
+#### TalkEasy Application
 * The app will send and receive messages between two screens.
 * The app will use two controllers - Sender & Receiver.
 * The Sender controller should have an edit text and a send button
@@ -186,13 +187,13 @@ If you already have knowledge and experience in iOS development, you may not nee
 #### Create Deep Links to App Content
 * Implement an app that handles incoming links.
 * The app will use one screen - HomeViewController
-* On Click of this link [https://open.my.app?message={anymessage}](https://open.my.app/?message={anymessage}) from anywhere, the system should open HomeViewController and show the message from a link.
+* On Click of this link https://open.my.app/?message={anymessage} from anywhere, the system should open HomeViewController and show the message from a link.
 * Use the URL schema in the App Delegate to handle deep links.
 
 # SwiftUI
 
 ### Practical 13
-#### Implement user profile UI
+#### User Profile UI
 * The app will use a single screen.
 * Display a user's profile picture, name, and bio. 
 * Use a placeholder for the image and profile data.
@@ -200,7 +201,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Here's [UI for reference](https://cdn.dribbble.com/userupload/5207044/file/original-ceb3338a4a693f6ab102298dd3745716.jpg?compress=1&resize=1024x768)
 
 ### Practical 14
-#### Develop an interactive UI for the Fitness application
+#### Fitness Application
 * App will provide a guided introduction to the app's features and functionality.
 * The onboard view should include a welcome message and an introduction to the app's primary features, such as tracking workouts, setting goals, and accessing workout routines. 
   - The onboard screen should have interactive elements such as buttons or sliders that allow the user to interact with the onboard screen.
@@ -213,7 +214,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Here's [UI for reference](https://cdn.dribbble.com/users/2321513/screenshots/13623207/media/00046acbffbf953281b06b5bf4685dfd.mp4)
 
 ### Practical 15
-#### Develop MathQuest quiz application
+#### MathQuest Quiz Application
 * The home screen should be an entry point of the app.
   - This should provide an introduction to the quiz and a button to start the quiz. 
 * The quiz should ask 10 questions, one at a time, and provide four answer options for each question. 
@@ -230,7 +231,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # Networking
 
 ### Practical 16
-#### Develop ImageSaver application
+#### ImageSaver Application
 * Allow users to download an image from a given URL, display the image on the screen, and store the downloaded image file in the device's internal storage.
 * Screen will have one Text field to enter the URL.
 * Buttons to download images and cancel downloads.
@@ -240,7 +241,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Use Alamofire for networking.
 
 ### Practical 17
-#### Implement OnlineUserDirectory
+#### OnlineUserDirectory
 * The app will use one navigation view.
   - The main screen should show a list of users, retrieved from API.
   - Use Lazy Stack to show users.
@@ -261,7 +262,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # App Architecture 
 
 ### Practical 18
-#### Create My Journal application
+#### My Journal Application
 * Enable users to Add their daily thoughts, feelings, experiences, and ideas. 
 * The app will have a one-navigation view.
   - Show the user's thoughts in Grid.
@@ -273,7 +274,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Use MVVM app architecture
 
 ### Practical 19
-#### Implement Drink Explorer
+#### Drink Explorer Application
 * Allow users to search for their favorite mocktail detail.
 * The app will have single navigation.
   - Add a search bar that allows users to search for mocktails by name.
@@ -286,7 +287,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # DataStore
 
 ### Practical 20
-#### Develop Authentify
+#### Authentify Application
 * An application that takes user credentials and basic information of a user and navigates to the home screen after a successful login.
 * The app will have a single navigation view.
   - First, the app will show the register form
@@ -305,10 +306,10 @@ If you already have knowledge and experience in iOS development, you may not nee
   - Until the user logs out app should show the home screen.
   - When the user clicks the logout/delete user button, the app should clear/delete the user session and navigate back to the login screen.
 
-# Local Storage
+# Local Storage (Database)
 
 ### Practical 21
-#### Develop EmployeeHub application
+#### EmployeeHub Application
 * The application should display a list of employees on the home screen.
   - Show basic details including their name and job title. 
 * When a user clicks on an employee from the list, the application should display their full details.
@@ -321,7 +322,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Use MVVM app architecture
 
 ### Practical 22
-#### Implement MinionSpeak application
+#### MinionSpeak Application
 * Allow users to translate English text to the language of the minions and display the translated text on the screen.
 * On the Home screen
   - Add a text field to enter the English text.
@@ -336,7 +337,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # Dependency Injection
 
 ### Practical 23
-#### Implement University directory application
+#### University Directory Application
 * Allow users to browse and search universities from all around the world.
 * On the Home screen
   - Add a dropdown to select the country
@@ -346,7 +347,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Write a Unit test for ViewModel.
 
 ### Practical 24
-#### Implement offline-first StoreMate product application
+#### Offline-first StoreMate Product Application
 * GET API: https://fakestoreapi.com/products
 * On the Home screen
   - Retrieve the list of products from an API and displays it to the user.
@@ -369,7 +370,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # Combine
 
 ### Practical 25
-#### Implement count-down timer application using Combine. 
+#### Count-down Timer Application
 * On the Home screen
   - Add text fields to take user input for hours, minutes and second
   - Button to start/stop the timer
@@ -380,7 +381,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Write a Unit test for ViewModel.
 
 ### Practical 26
-#### Implement a VocabVault app
+#### VocabVault Application
 * Allow users to search for the definition of any word in the English language.
 * On the Home screen
   - Users should be able to search for a word by typing it into a search bar
@@ -393,7 +394,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Write a Unit test for ViewModel.
 
 ### Practical 27
-#### Create a Contact Keeper application.
+#### Contact Keeper Application.
 * On the Home screen
   - Show all Contacts on the home screen
     - Show name, phone number, and profile
@@ -411,7 +412,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # Broadcast receiver & Task scheduling
 
 ### Practical 28
-#### Create Stand Up! application 
+#### Stand Up! Application 
 * Remind users to stand up and walk around every fifteen minutes.
 * On the Home screen
   - Add a Toggle button to turn the alarm on and off
@@ -423,7 +424,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 # iOS Service APIs
 
 ### Practical 29
-#### Create a Music player application
+#### Music Player Application
 * Allow users to play multiple songs. 
 * On the Home screen
   - Show a list of songs from the device
