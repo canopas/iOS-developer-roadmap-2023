@@ -39,8 +39,8 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Basic introduction to [Xcode Interface](https://developer.apple.com/documentation/xcode)
 * Basic introduction to [Version Control System](https://www.geeksforgeeks.org/version-control-systems/)
 * Udemy Course - [iOS App Development Bootcamp](https://www.udemy.com/course/ios-13-app-development-bootcamp/)
-* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
-  * [Overview with Udemy](https://www.udemy.com/course/ios-13-app-development-bootcamp/learn/lecture/16254084#overview)
+* [SwiftUI](https://developer.apple.com/xcode/swiftui/) introduction.
+   * [Overview with Udemy](https://www.udemy.com/course/ios-13-app-development-bootcamp/learn/lecture/16254084#overview)
 * [Combine](https://developer.apple.com/documentation/combine) - A Declarative Swift API for processing values over time.
 
 # iOS Storyboard / XIB
@@ -391,7 +391,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * Make sure the app will not make unnecessary API calls while typing in the search view.
   - Use debounce using combine to avoid extra API calls
 * API - https://api.dictionaryapi.dev/api/v2/entries/en/<word>.
-* Write a Unit test for ViewModel.
+* Write a Unit test with [Cuckoo](https://github.com/Brightify/Cuckoo) for ViewModel.
 
 ### Practical 27
 #### Contact Keeper Application.
@@ -407,7 +407,7 @@ If you already have knowledge and experience in iOS development, you may not nee
 * The app should also update contacts in real-time, so changes made by one user are reflected across all devices.
 * Use Firestore to store contact details.
 * Use Combine with SwiftUI.
-* Write a Unit test for ViewModel.
+* Write a Unit test for ViewModel. (If possible use Cuckoo)
 
 # Broadcast receiver & Task scheduling
 
