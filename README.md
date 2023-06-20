@@ -6,13 +6,28 @@ The iOS Developer Roadmap 2023 includes **29 practical exercises** that cover al
 
 # Guidelines
 - Before starting any practice, it's essential to conduct research and learn the necessary concepts.
-- As you progress through the practical exercises, make sure to apply the new knowledge you've gained in subsequent exercises.
+
+- As you go through the practical exercises, please make sure to apply the new knowledge you've gained in subsequent practices. Try to allocate a maximum of 5 days to each practical.
+
 - Follow iOS [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) for the best practices of user interface design.
+
 - Follow iOS [App Life Cycle](https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle).
+
 - Follow the recommended app architecture for developing an iOS app.
 
 # Table of contents
-
+* [Useful references]()
+* [iOS Storyboard / XIB]()
+* [ViewController]()
+* [SwiftUI]()
+* [Combine]()
+* [App Architecture]()
+* [Networking]()
+* [DataStore]()
+* [Local Storage]()
+* [Dependency Injection]()
+* [Broadcast receiver & Task scheduling]()
+* [iOS Service APIs]()
 
 ## Useful references
 The references provided are aimed at individuals who have no prior knowledge or experience in developing iOS apps. They serve as a starting point for beginners in the field, providing basic knowledge that is necessary before diving into iOS development. 
@@ -21,9 +36,8 @@ If you already have knowledge and experience in iOS development, you may not nee
 
 * Introduction to [Swift programming](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics)
 * Basic introduction to [Swift Playgrounds](https://www.appcoda.com/learnswift/playgrounds.html).
-* Basic introduction to Xcode Interface
-* Basic introduction to Version Control System
-* App Architecture
+* Basic introduction to [Xcode Interface](https://developer.apple.com/documentation/xcode)
+* Basic introduction to [Version Control System](https://www.geeksforgeeks.org/version-control-systems/)
 * Udemy Course - [iOS App Development Bootcamp](https://www.udemy.com/course/ios-13-app-development-bootcamp/)
 * [SwiftUI](https://developer.apple.com/xcode/swiftui/)
   * [Overview with Udemy](https://www.udemy.com/course/ios-13-app-development-bootcamp/learn/lecture/16254084#overview)
