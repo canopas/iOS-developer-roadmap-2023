@@ -59,7 +59,6 @@ If you already have knowledge and experience in iOS development, you may not nee
   - Use dummy data for chats.
   - Add a toggle button on the Home screen to change the day/night theme.
 * App should responsive for different resolutions(for different devices).
-* Add support for light/dark themes.
 * You can use any images or placeholder to make UI eye-catchy.
 * App should follow UI guidelines.
 * Here's [UI for reference](https://cdn.dribbble.com/userupload/3719280/file/original-5d6d206acf8adf5458091206369445f1.png?compress=1&resize=752x)
